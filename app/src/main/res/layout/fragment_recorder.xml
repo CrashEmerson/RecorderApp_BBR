@@ -3,11 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".RecorderFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recordingWaveImgView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/design_default_color_primary"
+                android:backgroundTint="#01A3B8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recordStart_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike_angular"
+                android:text=""
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+            <ImageButton
+                android:id="@+id/recordNowImgBtn"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/corner_radius"
+                android:backgroundTint="#00BCD4"
+
+                android:src="@drawable/ic_record_now"
+                />
+
+
+
+            <TextView
+                android:id="@+id/audioFileTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recordNowImgBtn"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alike_angular"
+                android:text=""
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

@@ -11,14 +11,14 @@
         android:id="@+id/tabLyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabTextColor="@color/white"
+        android:background="#46c3db"
         app:tabIndicatorColor="@color/white"
         app:tabSelectedTextColor="@color/white"
-        android:background="#46c3db"
-        />
+        app:tabTextColor="@color/white" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
